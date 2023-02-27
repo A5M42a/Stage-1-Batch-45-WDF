@@ -26,7 +26,6 @@ function getData(event) {
     pronextjs: pronextjs == true ? true : false,
     protypescript: protypescript == true ? true : false,
     proimage,
-    author: "Afif Mardani P",
   };
 
   datas.push(data);
@@ -130,29 +129,27 @@ const getDuration = (mulai, akhir) => {
   const miliSecond = 1000;
   const distance = new Date(akhir) - new Date(mulai);
 
-  const dayDistance = Math.floor(
+  const tahunDistance = Math.floor(
     distance / (12 * 30 * 24 * 60 * 60 * miliSecond)
   );
-  if (dayDistance > 0) {
-    return dayDistance + "Year";
+  if (tahunDistance > 0) {
+    return tahunDistance + "Year";
   } else {
-    const hourDistance = Math.floor(
+    const bulanDistance = Math.floor(
       distance / (30 * 24 * 60 * 60 * miliSecond)
     );
-    if (hourDistance != 0) {
-      return hourDistance + "Month";
+    if (bulanDistance != 0) {
+      return bulanDistance + "Month";
     } else {
-      const minuteDistance = Math.floor(
+      const mingguDistance = Math.floor(
         distance / (7 * 24 * 60 * 60 * miliSecond)
       );
-      if (minuteDistance >= 1) {
-        return minuteDistance + "Week";
+      if (mingguDistance >= 1) {
+        return mingguDistance + "Week";
       } else {
-        const secondDistance = Math.floor(
-          distance / (24 * 60 * 60 * miliSecond)
-        );
-        if (secondDistance != 0) {
-          return secondDistance + "Day";
+        const hariDistance = Math.floor(distance / (24 * 60 * 60 * miliSecond));
+        if (hariDistance != 0) {
+          return hariDistance + "Day";
         }
       }
     }
