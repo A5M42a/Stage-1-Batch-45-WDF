@@ -12,7 +12,7 @@
   padding: 30px 50px;
   border: 1px solid #dbdbdb;
   width: 80%;
-  height: 80vmin;
+  height: 600px;
   margin: 90px auto;
   border-radius: 10px;
   box-shadow: 0 10px 10px #9b9b9b;
@@ -30,7 +30,7 @@ span {
 }
 
 .profile-item img {
-  width: 45vmin;
+  width: 330px;
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
@@ -75,13 +75,13 @@ span {
 }
 
 .description-item h2 {
-  font-size: 4vmin;
+  font-size: 40px;
   margin: 0;
 }
 
 .description-item p {
   margin: 0;
-  font-size: 2.7vmin;
+  font-size: 23px;
 }
 
 .description-item a {
@@ -127,10 +127,6 @@ form .cont-date {
   justify-content: space-between;
 }
 
-.cont-checkinput[type: "checkbox" ] {
-  border-radius: 200px;
-}
-
 .cont-check {
   display: flex;
   white-space: nowrap;
@@ -145,7 +141,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 60px;
   background-color: #f4f3f3;
   border-bottom: 1px solid #dbdbdb;
   padding: 5px 20px;
@@ -248,11 +244,6 @@ input[type="file"] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#input-upload {
-  position: relative;
-  overflow: hidden;
-}
-
 #input-upload::before {
   content: "Choose";
   display: inline-block;
@@ -265,17 +256,11 @@ input[type="file"] {
   cursor: pointer;
 }
 
-#input-upload::after {
-  content: url(assets/images/file.png) "";
-}
-
 #input-upload::-webkit-file-upload-button {
   visibility: hidden;
 }
 
 input[type="file"] {
-  position: relative;
-  overflow: hidden;
   background-color: #fff;
   padding: 0;
   border-radius: 5px;
